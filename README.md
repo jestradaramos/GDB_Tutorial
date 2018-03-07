@@ -22,4 +22,5 @@ Some of the things that you will find include:
 - A link to the presentation below
 
 ## Slides
+Keep in mind, that slides can go up and down. And not only left to right. :)
 [GDB Slides](http://slides.com/jestrada/gdb-worksop)
