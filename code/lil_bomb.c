@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-
 
 
 struct Node{
@@ -12,7 +10,6 @@ struct Node{
 // Global Nodes for the queue. Just to make life easier. 
 struct Node* head;
 struct Node* tail;
-int queueSize = 0;
 
 struct Node* createNode(int data, struct Node* next);
 void enqueue(int newData);
@@ -20,14 +17,6 @@ int dequeue();
 void printQueue();
 
 int main(int argc, char** argv){
-	srand(time(NULL)); // Pretend you can't see this lol
-	// Arbritary for loop to show watchpoint
-	int x = 0;
-	for (; x < 10; x++){
-		printf("%d\n", x);	
-	}
-
-
 	enqueue(3);
 	enqueue(1);
 	enqueue(4);
@@ -56,9 +45,7 @@ struct Node* createNode(int data, struct Node* next){
 
 // Adds new data to the back of the queue
 void enqueue(int newData){
-	struct Node* aNode;
-	if ((rand() % 10) <= 5)
-		aNode = (struct Node*) malloc (sizeof (Node));
+	struct Node* aNode = (struct Node*) malloc (sizeof (Node));
 	aNode->data = newData;
 	aNode->next = NULL;
 	printf("Added %d to the queue\n\n", newData);
@@ -68,7 +55,6 @@ void enqueue(int newData){
 		return;
 	}
 	tail->next = aNode;
-	queueSize++;
 	tail = aNode;
 	return;
 }
@@ -88,7 +74,6 @@ int dequeue(){
 		printf("Dequeue Val: %d\n\n", result);
 	}
 	free(temp);
-	queueSize--;
 	return result;
 }
 
@@ -105,3 +90,9 @@ void printQueue(){
 	return;
 }
 
+void explode(){
+	printf("YOU FOOL, YOU'VE RUINED THE QUEUE AND WILL NOW RUIN YOUR GRADE!!\n");
+	printf("HOW WOULD A ZERO MAKE YOU FEEL??\n");
+	printf("I HOPE REALLY BAD\n");
+	exit(0);
+}
