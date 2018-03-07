@@ -1,32 +1,25 @@
 # GDB_Tutorial
-Code and Notes to be used for a GDB tutorial. 
+In this repo, you will find all the material used during the ACM GDB Workshop.
 
-
-## Things to Cover  
+## Things That Were Covered  
 - When to use it  
-- How to get symbols into GDB  
-- Breakpoints  
+- How to get symbols into GDB/ Compiling
+- Breakpoints 
+- Watchpoints
 - Finding Segfaults  
 - Step through code one line at a time 
-- Stepping into code  
+- Stepping into functions  
 - Step through code one assembly command at a time  
 - Different Layouts within GDB  
 - Printing out values within GDB  
 - Printing out registers within GDB  
-- Looking at the Stack  
-- Check for the change of a value (I think thats a thing) 
-- PEDA has been used to help students in the assembly class, but I don't like it
 
-## Materials Needed  
-- Github Repo with all files necessary  
-- Slides to help throughout tutorial 
-- GDB CheatSheet  
-- Makefile to run with one program at a time 
-- C/C++ code that will be needed to show different situations for GDB  
-	- Segfaults  
-	- Incorrect output  
-	- Reverse Engineering  
-- Linux Enviornment  
-- SSH into CCC Machine?  
+## Materials Here 
+Some of the things that you will find include:
+- All the code used during the presentation
+- Makefile for all the code
+- A GDB Cheat Sheet 
+- A link to the presentation below
 
-
+## Slides
+[GDB Slides](http://slides.com/jestrada/gdb-worksop)
