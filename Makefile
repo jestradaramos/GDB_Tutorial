@@ -1,4 +1,4 @@
-all: simple_step bad_code
+all: simple_step bad_code lil_bomb
 
 simple_step: code/simple_step.c
 	gcc -Wall -g code/simple_step.c -o simple_step.x
