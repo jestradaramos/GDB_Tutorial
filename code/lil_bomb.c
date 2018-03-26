@@ -4,9 +4,11 @@
 
 void explode();
 void phase1();
+void phase2();
 
 int main(int argc, char** argv){
    phase1(); 
+   phase2();
 
 }
 
@@ -21,12 +23,24 @@ void phase1(){
     char* buffer = (char*) malloc (8);
     gets(buffer);
     if (!strcmp(a, buffer)){
-        printf("Nooooo! You've defused the bomb! My evil plot is ruined!\n");
+        printf("Nooooo! You've defused this phase! My evil plot is ruined!\n");
     } else {
         explode();
     }
 }
 
+void phase2(){
+	printf("It's okay, there's another phase. You'll never figure this one out.\n");
+	int a = 0;
+	char buffer[5];
+
+	gets(buffer);
+	printf("Your guess: %s", buffer);
+
+	if (!a){
+		explode();
+	}
+}
 void explode(){
 	printf("YOU FOOL, YOU'VE RUINED EVERYTHING AND I WILL NOW RUIN YOUR GRADE!!\n");
 	printf("HOW WOULD A ZERO MAKE YOU FEEL??\n");
